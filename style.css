@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #00129C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.botoes {
+    margin: 20px 0;
+}
+
+.botoes a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botoes a:hover {
+    color: #9C5800;
+}
+
+.banner {
+    background-image: url("https://i.pinimg.com/736x/66/af/42/66af421e863cb4b2fe6155d64c312777.jpg");
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 70px 20px;
+
+    color: white;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#veiculos {
+    padding: 2rem;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    min-height: 500px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.botao-card {
+    background-color: #9C5800;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: auto;
+    text-decoration: none;
+    color: #f0ece6;
+}
+
+.botao-card:hover {
+    background-color: #9C2B00;
+}
+
+section:last-of-type {
+    background-color: #f0ece6;
+    padding: 50px 20px;
+}
+
+section h2 {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.depoimento {
+    width: 100%;
+}
+
+.nome {
+    color: #9C5800;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.texto-depoimento {
+    margin-bottom: 10rem;
+    background-color: #473218;
+    color: #f0ece6;
+    text-align: left;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #00129C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #9C5800;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* LAYOUT PARA TABLET*/
+
+@media (min-width:768px) {
+
+    .lista {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .card {
+
+        width: 47%;
+
+    }
+
+    .depoimento {
+
+        width: 47%;
+
+    }
+
+}
+
+/* LAYOUT PARA PC*/
+
+@media (min-width:992px){
+
+.card{
+
+    width:23%;
+
+}
+
+.depoimento{
+
+    width:48%;
+
+}
+
+
+
+}
